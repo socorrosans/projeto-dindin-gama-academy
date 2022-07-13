@@ -1,0 +1,96 @@
+@import url('geral.css');
+
+:root {
+  --verde-padrao: #2E948A;
+  --rosa-padrao: #FF4081;
+  --preto-secundario: #555555;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--rosa-padrao); 
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+p {
+  color: #000000;
+}
+
+.main {
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 10rem;
+}
+
+input, textarea {
+  width: 49rem;
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  border: 1px solid #686868;
+  border-radius: 7px;
+  padding-block: 1rem;
+  padding-left: 2.2rem;
+}
+
+textarea {
+  resize: none;
+  height: 19rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+button {
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--rosa-padrao);
+  padding: .5rem 4rem;
+  align-self: flex-start;
+}
+
+@media (max-width: 1000px){
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main img {
+    order: 1;
+  }
+}
