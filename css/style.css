@@ -1,9 +1,8 @@
-@import url('geral.css');
+@import 'geral.css';
 
 h1 {
   font-size: 6rem;
   font-weight: 700;
-  color: var(--rosa-padrao);
   max-width: 450px;
 }
 
@@ -33,12 +32,6 @@ p {
   color: var(--rosa-padrao);
   font-size: 2.7rem;
   text-transform: lowercase;
-}
-
-.info, .sobre, .conteudos, .intro, .footer{
-  max-width: 1500px;
-  margin-inline: auto;
-  padding-inline: 3rem;
 }
 
 .info {
@@ -278,6 +271,10 @@ p {
   .intro p, .intro h1 {
     max-width: none;
     text-align: center;
+  }
+
+  .info h2 {
+    font-size: 1.8rem;
   }
 
   .sobre {

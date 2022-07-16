@@ -1,38 +1,8 @@
-@import url('geral.css');
-
-:root {
-  --verde-padrao: #2E948A;
-  --rosa-padrao: #FF4081;
-  --preto-secundario: #555555;
-  font-size: 62.5%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.6rem;
-  margin: 0;
-  padding: 0;
-}
+@import 'geral.css';
 
 h1 {
   font-size: 4rem;
   font-weight: 700;
-  color: var(--rosa-padrao); 
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  text-transform: lowercase;
 }
 
 p {
@@ -92,5 +62,27 @@ button {
 
   .main img {
     order: 1;
+  }
+}
+
+@media (max-width: 550px){
+  .main img {
+    width: 350px;
+    height: 350px;
+  }
+
+  input, textarea {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 400px){
+  .main img {
+    width: 250px;
+    height: 250px;
+  }
+
+  input, textarea {
+    width: 25rem;
   }
 }

@@ -31,6 +31,16 @@ header {
   background-color: var(--verde-padrao);
 }
 
+h1 {
+  color: var(--rosa-padrao);
+}
+
+.alinhamento {
+  max-width: 1500px;
+  margin-inline: auto;
+  padding-inline: 3rem;
+}
+
 .nav {
   max-width: 1600px;
   box-sizing: border-box;

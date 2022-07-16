@@ -1,1 +1,165 @@
-@import url('geral.css');
+@import 'geral.css';
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  max-width: 15ch;
+  margin-bottom: 2rem;
+}
+
+main p {
+  font-size: 2rem;
+  font-weight: 300;
+  max-width: 40ch;
+  position: relative;
+}
+
+main h2 {
+  color: var(--rosa-padrao);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.intro {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 9rem 11.5rem;
+  margin-inline: auto;
+  padding-inline: 3rem;
+}
+
+.aulas {
+  background-color: #F7F7F7;
+  
+}
+
+.aula {
+  max-width: 1000px;
+  display: flex;
+  gap: 8rem;
+  padding-block: 7.5rem;
+  padding-inline: 5rem;
+  margin-inline: auto;
+}
+
+.a1, .a2 {
+  border-bottom: 3px solid #C4C4C4;
+}
+
+.aula h2::after {
+  display: block;
+  content: "";
+  width: 90px;
+  height: 90px;
+  background: url('../imgs-curso/Ellipse1.svg') no-repeat center;
+  position: absolute;
+  left: -350px;
+  bottom: -134px;
+}
+
+.aula p::after {
+  display: block;
+  content: "";
+  width: 55px;
+  height: 55px;
+  background: url('../imgs-curso/Polygon1.svg') no-repeat center;
+  position: absolute;
+  top: 3.7rem;
+  left: -32.7rem;
+}
+
+@media (max-width: 1000px){
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .aulas p, .intro p {
+    font-size: 1.8rem;
+  }
+
+  .aulas h2 {
+    font-size: 3rem;
+  }
+
+  .aula img {
+    width: 400px;
+    height: 260px;
+  }
+
+  .aula h2::after {
+    left: -33rem;
+    bottom: -13.4rem;
+  }
+
+  .aula p::after {
+    top: 3.7rem;
+    left: -30rem;
+  }
+}
+
+@media (max-width: 900px){
+  .aula {
+    flex-direction: column;
+  }
+
+  .aula h2::after {
+    left: 15.5rem;
+    top: -25.5rem;
+  }
+
+  .aula p::after {
+    top: -29.5rem;
+    left: 17.5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .intro h1 {
+    text-align: center;
+    font-size: 4rem;
+    max-width: none;
+  }
+
+  .intro p {
+    text-align: justify;
+    max-width: none;
+  }
+
+}
+
+@media (max-width: 500px){
+  .intro img {
+    width: 300px;
+    height: 300px;
+  }
+  .aula img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .aula h2::after {
+    left: 10.5rem;
+    top: -22.5rem;
+  }
+
+  .aula p::after {
+    top: -26.5rem;
+    left: 12.5rem;
+  }
+}
+
+@media (max-width: 400px){
+  .aula {
+    padding-inline: 3rem;
+  }
+}
+
