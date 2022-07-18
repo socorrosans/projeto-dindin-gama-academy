@@ -40,6 +40,10 @@ aside a {
   color: #FFFFFF;
 }
 
+aside a:hover {
+  background-color: #d3265f;
+}
+
 aside h2 {
   color: var(--rosa-padrao);
   font-size: 5rem;

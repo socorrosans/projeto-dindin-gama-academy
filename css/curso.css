@@ -11,7 +11,6 @@ main p {
   font-size: 2rem;
   font-weight: 300;
   max-width: 40ch;
-  position: relative;
 }
 
 main h2 {
@@ -19,7 +18,6 @@ main h2 {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 2.5rem;
-  position: relative;
 }
 
 .intro {
@@ -49,28 +47,6 @@ main h2 {
   border-bottom: 3px solid #C4C4C4;
 }
 
-.aula h2::after {
-  display: block;
-  content: "";
-  width: 90px;
-  height: 90px;
-  background: url('../imgs-curso/Ellipse1.svg') no-repeat center;
-  position: absolute;
-  left: -350px;
-  bottom: -134px;
-}
-
-.aula p::after {
-  display: block;
-  content: "";
-  width: 55px;
-  height: 55px;
-  background: url('../imgs-curso/Polygon1.svg') no-repeat center;
-  position: absolute;
-  top: 3.7rem;
-  left: -32.7rem;
-}
-
 @media (max-width: 1000px){
   h1 {
     font-size: 4.5rem;
@@ -84,35 +60,15 @@ main h2 {
     font-size: 3rem;
   }
 
-  .aula img {
+  .aula iframe {
     width: 400px;
     height: 260px;
-  }
-
-  .aula h2::after {
-    left: -33rem;
-    bottom: -13.4rem;
-  }
-
-  .aula p::after {
-    top: 3.7rem;
-    left: -30rem;
   }
 }
 
 @media (max-width: 900px){
   .aula {
     flex-direction: column;
-  }
-
-  .aula h2::after {
-    left: 15.5rem;
-    top: -25.5rem;
-  }
-
-  .aula p::after {
-    top: -29.5rem;
-    left: 17.5rem;
   }
 }
 
@@ -141,25 +97,15 @@ main h2 {
     width: 300px;
     height: 300px;
   }
-  .aula img {
+  .aula iframe {
     width: 300px;
     height: 200px;
-  }
-
-  .aula h2::after {
-    left: 10.5rem;
-    top: -22.5rem;
-  }
-
-  .aula p::after {
-    top: -26.5rem;
-    left: 12.5rem;
   }
 }
 
 @media (max-width: 400px){
   .aula {
-    padding-inline: 3rem;
+    padding-inline: 1.5rem;
   }
 }
 

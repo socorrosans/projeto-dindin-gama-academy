@@ -38,6 +38,10 @@ p.main-itens {
   padding: 1rem 4rem;
 }
 
+.main a:hover {
+  background-color: #1b726a;
+}
+
 .main section {
   margin-top: 10rem;
   border-bottom: 4px solid #C4C4C4;

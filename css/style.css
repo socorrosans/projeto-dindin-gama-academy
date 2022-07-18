@@ -34,6 +34,12 @@ p {
   text-transform: lowercase;
 }
 
+.intro a:hover {
+  border: 2px solid #d3265f;
+  background-color: #d3265f;
+  color: #FFFFFF;
+}
+
 .info {
   box-sizing: border-box;
   display: flex;
@@ -72,6 +78,10 @@ p {
   font-size: 2rem;
   padding: 1rem 4rem;
   color: #FFFFFF;
+}
+
+.info a:hover {
+  background-color: #d3265f;
 }
 
 .info img {
@@ -164,6 +174,12 @@ p {
   padding: 1rem 4rem;
   margin-block: 10rem 5rem;
   align-self: center;
+}
+
+.conteudos a:hover {
+  border: 2px solid #d3265f;
+  background-color: #d3265f;
+  color: #FFFFFF;
 }
 
 .conteudos img {
